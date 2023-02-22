@@ -1,0 +1,34 @@
+.noUi-base .noUi-origin .noUi-handle {
+    height: 1.5vw;
+    width: 1.5vw;
+    border-radius: 50%;
+    cursor: pointer;
+    right: -14px;
+
+    &::before,
+    &::after {
+        display: none;
+    }
+
+    .noUi-marker-large {
+        display: none;
+    }
+}
+
+.noUi-pips {
+    .noUi-marker-large {
+        display: none;
+    }
+
+    .noUi-value-large {
+        top: 0;
+    }
+}
+
+.noUi-target.noUi-ltr .noUi-pips {
+    height: 52px;
+}
+
+.sliders-interaction.locked .noUi-handle {
+    pointer-events: none;
+}

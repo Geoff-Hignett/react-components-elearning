@@ -1,0 +1,18 @@
+.tick-all-correct {
+    p.tick-all-correct__option {
+        border: 2px solid transparent;
+    }
+
+    .selected p {
+        border: 2px solid yellow;
+    }
+
+    .submitted p {
+        background-color: red;
+    }
+    
+    .submitted.correct p {
+        background-color: green;
+    }
+}
+

@@ -1,0 +1,13 @@
+.multiple-choice {
+    .selected {
+        background-color: yellow;
+    }
+    
+    .submitted {
+        background-color: red;
+    }
+    
+    .submitted.correct {
+        background-color: green;
+    }
+}
