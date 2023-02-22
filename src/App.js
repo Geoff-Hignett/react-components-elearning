@@ -8,7 +8,6 @@ import MultipleChoice from "./components/MultipleChoice";
 import TickAllCorrect from "./components/TickAllCorrect";
 import ClickAndReveal from "./components/ClickAndReveal";
 import ClickAndRevealSequential from "./components/ClickAndRevealSequential";
-import DragAndDrop from "./components/DragAndDrop";
 import SvgWheel from "./components/SvgTest";
 import { AppProvider } from "./AppContext";
 
@@ -26,7 +25,6 @@ function App() {
               <Route path="tick-all-correct" element={ <TickAllCorrect /> } />
               <Route path="click-and-reveal" element={ <ClickAndReveal /> } />
               <Route path="click-and-reveal-sequential" element={ <ClickAndRevealSequential /> } />
-              <Route path="drag-and-drop" element={ <DragAndDrop /> } />
               <Route path="svg-wheel" element={ <SvgWheel /> } />
             </Routes>
           </AppProvider>

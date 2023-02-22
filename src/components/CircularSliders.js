@@ -1,13 +1,13 @@
 import React from 'react';
 import CircularSlider from '@fseehawer/react-circular-slider';
 import Header from './Header';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const CircularSliders = () => {
-    const [interactionLocked, setInteractionLocked] = useState(false);
+    // const [interactionLocked, setInteractionLocked] = useState(false);
     const [score, setScore] = useState(null);
-    const [interactionResult, setInteractionResult] = useState(null);
-    const [remainingAttempts, setRemainingAttempts] = useState(2);
+    // const [interactionResult, setInteractionResult] = useState(null);
+    // const [remainingAttempts, setRemainingAttempts] = useState(2);
     const [sliderQuestions, setSliderQuestions] = useState([
         {
             id: 0,
@@ -32,40 +32,40 @@ const CircularSliders = () => {
         },
 
     ]);
-    const [feedback] = useState([
-        {
-            id: 1,
-            outcome: "correct",
-            buttonText: "Continue",
-            text: "Well Done!",
-            subText: "You got everything correct",
-        },
-        {
-            id: 2,
-            outcome: "incorrect",
-            buttonText: "Continue",
-            text: "Not Quite!",
-            subText: "You were so close",
-        },
-        {
-            id: 3,
-            outcome: "repeat",
-            buttonText: "Retry",
-            text: "Try Again!",
-            subText: "Have another go",
-        },
-    ]);
+    // const [feedback] = useState([
+    //     {
+    //         id: 1,
+    //         outcome: "correct",
+    //         buttonText: "Continue",
+    //         text: "Well Done!",
+    //         subText: "You got everything correct",
+    //     },
+    //     {
+    //         id: 2,
+    //         outcome: "incorrect",
+    //         buttonText: "Continue",
+    //         text: "Not Quite!",
+    //         subText: "You were so close",
+    //     },
+    //     {
+    //         id: 3,
+    //         outcome: "repeat",
+    //         buttonText: "Retry",
+    //         text: "Try Again!",
+    //         subText: "Have another go",
+    //     },
+    // ]);
 
     const renderCircularSliders = () => {
         return sliderQuestions.map((question, index) => (
             <CircularSlider
-            width="180"
-            label="PERCENTAGE"
-            min={0}
-            max={100}
-            dataIndex={50}
-            appendToValue="%"
-            onChange={ value => { console.log(value); } }
+                width="180"
+                label="PERCENTAGE"
+                min={0}
+                max={100}
+                dataIndex={50}
+                appendToValue="%"
+                onChange={ value => { console.log(value); } }
             />
         ))
     }
